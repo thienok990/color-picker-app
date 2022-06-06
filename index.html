@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</head>
+  <body>
+        <div class="colorGroup" style="width: 800px;">
+            <div class="color" style="background-color: red;"></div>
+            <div class="color" style="background-color: yellow;"></div>
+            <div class="color" style="background-color: green;"></div>
+            <div class="color" style="background-color: blue;"></div>
+            <div class="color" style="background-color: pink;"></div>
+            <div class="color" style="background-color: black;"></div>
+            <div class="color" style="background-color: violet;"></div>
+            <div class="color" style="background-color: gray;"></div>
+            <div class="color" style="background-color: rgb(107, 231, 107);"></div>
+            <div class="color" style="background-color: rgb(126, 82, 156);"></div>
+            <div class="color" style="background-color: rgb(117, 66, 66);"></div>
+            <div class="color" style="background-color: rgb(134, 145, 88);"></div>
+            <div class="color" style="background-color: rgb(255, 1, 255);"></div>
+            <div class="color" style="background-color: rgb(0, 255, 221);"></div>
+        </div>
+        <br>
+        <div id="Popup" style="display: inline;">
+        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Open popup</button> -->
+        <div class="modal fade" id="myModal">
+           <!-- Popup -->
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Popup Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-tittle">Colors</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- Popup Body -->
+                    <div class="modal-body">
+                        <label for="nameColor">Name</label>
+                        <input type="text" id="nameColor">
+                        <p id="color">Color: </p>
+                        <label for="categoryColor">Choose Your Color:</label>
+                        <select name="categoryColor" id="categoryColor">
+                            <option value="Dark">Dark</option>
+                            <option value="Light">Light</option>
+                        </select>
+                    </div>
+                    <!-- Popup Footer -->
+                    <div class="modal-footer">
+                        <button id="btnSave" type="button" class="btn btn-primary">Save</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+       </div>
+      </div>
+      <br>
+      <div id="todo">
+        <div class="todo__header">
+            <div>
+                <div class="date">Thursday, 06th</div>
+                <div class="month">June</div>
+            </div>
+            <div class="total-colors">
+                2 Colors
+            </div>
+        </div>
+        <div class="todo__navbar">
+            <ul>
+                <li class="link selected" id="All">All</li>
+                <li class="link" id="Light">Light</li>
+                <li class="link" id="Dark">Dark</li>
+            </ul>
+            <button type="submit" id="btnClear">
+                Clear All
+            </button>
+        </div>
+        <div class="todo__container">
+            <ul class="todo__container__color">
+                <!-- <li class="todo__container__color__name">
+                    <div class="color">
+                        <label for="color"></label>
+                    </div>
+                </li>
+                <li class="todo__container__color__name">
+                    <div class="color">
+                        <label for="color"></label>
+                    </div>
+                </li>
+                <li class="todo__container__color__name">
+                    <div class="color">
+                        <label for="color"></label >
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+        <div class="todo___action">
+            <input type="search" placeholder="Enter Your Color" id="searchColor"/>
+            <button class="button" type="submit" id="btnSearch"><i class="fas fa-search"></i></button>
+        </div>
+    </div>
+  </body>
+</html>
