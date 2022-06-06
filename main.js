@@ -178,7 +178,7 @@ let colorPicker = {
                             result.group == 'Light' ? 'Dark' : ''
                             }" for="color">${result.name} (${result.group})</label>               
                         </div>
-                        <button id="btnCopy-${id}" type="button" class="btn btn-primary copyButton"  data-id="${id}">
+                        <button id="btnCopy-${result.id}" type="button" class="btn btn-primary copyButton"  data-id="${result.id}">
                             <i class="fas fa-clipboard"></i>
                         </button>
                     </li>`;
