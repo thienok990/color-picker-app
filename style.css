@@ -22,6 +22,7 @@
   overflow: hidden;
   box-shadow: -5px 5px 15px rgb(0 0 0 / 50%);
   margin-bottom: 2rem;
+  margin-right: 2rem;
 }
 
 .todo__header {
