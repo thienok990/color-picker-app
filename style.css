@@ -15,13 +15,13 @@
     float: right;
     display: flex;
     flex-direction: column;
-    /* border: 1px solid black; */
     font-size: 1.6rem;
     width: 40rem;
-    height: 50rem;
+    height: 60rem;
     border-radius: 0.5rem;
     overflow: hidden;
     box-shadow: -5px 5px 15px rgb(0 0 0 / 50%);
+    margin-bottom: 2rem;
 }
 
 .todo__header{
@@ -90,9 +90,6 @@
     border-color: #2b49df;
 }
 
-.todo__container{
-    /* padding: 1rem 3rem; */
-}
 
 .todo__container .task label.checked{
     text-decoration: line-through;
